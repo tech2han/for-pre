@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300&display=swap');
+ @font-face {
+    font-family: segoesc;
+    src: url(segoescb.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat' , sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+    min-width: 250px;
+}
+.main-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-head{
+    font-size: 300%;
+    margin: 10;
+    color: black;
+    /* font-family: 'Edu VIC WA NT Beginner', cursive; */
+    font-family: Segoesc;
+    background-image: url(p-stains.png);
+    background-position: center;
+    background-size: 100%;
+}
+.header-head::after{
+    content: "Blog";
+    font-family: 'Edu TAS Beginner', cursive;
+}
+.main-header nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.667);
+    padding: 10px;
+}
+.main-header nav a,.main-header nav div{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    cursor: pointer;
+}
+.main-header nav div input{
+    height: 20px;
+    opacity: 0;
+    font-size: 70%;
+    padding-left: 10px;
+}
+.latest-posts-cont{
+    margin: 10px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.667);
+    padding: 10px;
+    overflow: auto;
+}
+.latest-posts-head{
+    font-size: 150%;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+}
+.latest-posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.latest-post{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
